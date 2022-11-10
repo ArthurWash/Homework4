@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>NJIT Registration System</title>
+</head>
+<body>
+
+	<h1><u>Welcome to the course registration site of NJIT</u></h1>
+	
+	<br><br><br><br><br>
+		
+	<form action="http://localhost:8080/Homework4/Main">
+	<input type="radio" name="rd" value="0" id="courseS" name="btnGroup">Course search
+	<span></span>
+	<input type="radio" name="rd" value="1" id="courseReg" name="btnGroup">Course registration
+	
+	<br><br><br><br><br>
+	
+	<div id=CSDropdown>
+	<fieldset>
+		<h2>Semester</h2>
+		<select name="semesterSelect">
+			<option value="default">Select semester</option>
+			<option value="Fall2021">Fall2021</option>
+			<option value="Spring2022">Spring2022</option>
+		</select>
+		<button>Submit</button>
+	</fieldset>
+	</div>
+	
+	<div id="CRDropdown">
+		<input type="text" placeholder="CourseID" name="cID">
+		<input type="text" placeholder="Semester" name="sem">
+		<button>Register</button>
+	</div>
+	</form>
+</body>
+</html>
